@@ -1,0 +1,87 @@
+.head {
+  color: #311f09;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  text-align: center;
+}
+.container {
+  text-align: center;
+  /* margin-left: 5%;
+  margin-right: 5%;
+  
+  margin-top: 10%; */
+  justify-content: center;
+  margin-bottom: 5%;
+
+}
+.btn {
+  justify-content: center;
+  background-color: #d0c7c763;
+  padding: 30px;
+  color: #311f09;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  border: none;
+  border-radius: 16px;
+  width: 15%;
+  margin-left: 2%;
+}
+.button:active {
+  background-color: #f54748;
+  color: white;
+}
+.btn:hover {
+  background-color: #f54748;
+  color: white;
+}
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+@media screen and (max-width:768px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    margin-top: 24px;
+    justify-content: center;
+    text-align: center;
+  }
+  .btn{
+    width: 50%;
+    padding: 30px;
+    margin-top: 24px;
+    justify-content: center;
+    text-align: center;
+  }
+  .button:active {
+    justify-content: center;
+
+    background-color: #f54748;
+    color: white;
+    text-align: center;
+  }
+  .btn:hover {
+    justify-content: center;
+
+    background-color: #f54748;
+    color: white;
+  }
+  .options{
+        flex-direction: column;
+
+  }
+  
+}

@@ -1,0 +1,44 @@
+.container {
+  flex-direction: column;
+  padding: 30px;
+  width: 24%;
+  margin-top: 5%;
+  margin-right: 24px;
+  border-radius: 40px;
+  background-color: #fdf5f5;
+  justify-content: center;
+  align-content: center;
+}
+.btn {
+  padding: 3%;
+  background-color: #f54748;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 16px;
+  width: 60%;
+}
+.price {
+  color: #311f09;
+}
+.img {
+  height: 270px;
+  width: 270px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    margin-top: 24px;
+    
+  }
+  .img {
+    padding-top: 6px;
+    height: 270px;
+    width: 270px;
+   
+  }
+}

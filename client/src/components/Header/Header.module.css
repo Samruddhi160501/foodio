@@ -1,67 +1,136 @@
 .header {
-    background: white;
-    padding: 0;
-    border-bottom: 1px solid #e72929;
-    width: 100%;
-  }
-  
-  .header a {
-    color: #af1313;
-  }
-  
-  .header a:hover {
-    background: #e72929;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .container {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .logo {
-    font-weight: bold;
-    padding: 1rem;
-  }
-  
-  .header ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-  }
-  
-  .header ul a {
-    padding: 1rem;
-    display: inline-block;
-  }
-  
-  .menu_container {
-    position: relative;
-    width: 100%;
-  }
-  
-  .menu {
-    position: absolute;
-    z-index: 1;
-    background-color: whitesmoke;
-    display: none;
-  }
-  
-  .menu_container:hover .menu {
+  padding: 0;
+  width: 100%;
+}
+
+.header a:hover {
+  background: #e72929;
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: black;
+  font-weight: bolder;
+  padding: 1rem;
+}
+
+.header ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.header ul a {
+  padding: 1rem;
+  display: inline-block;
+}
+
+.menu_container {
+  position: relative;
+  width: 100%;
+}
+
+.menu {
+  position: absolute;
+  z-index: 1;
+  background-color: whitesmoke;
+  display: none;
+}
+
+.menu_container:hover .menu {
+  display: block;
+}
+
+.menu a {
+  width: 100%;
+  min-width: 8rem;
+}
+
+.cart_count {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 0.1rem 0.45rem;
+  border-radius: 100rem;
+  font-size: 0.9rem;
+}
+/* Add these styles for the menu icon */
+.menuIcon {
+  display: none;
+  cursor: pointer;
+  color: black;
+  font-size: 1.5rem; /* Adjust the size of the menu icon */
+  padding: 1rem;
+}
+
+/* Adjust the styles for the navigation menu */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+/* Add styles for the dropdown menu */
+.menu_container {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  z-index: 1;
+  top: 100%; /* Position the dropdown menu below its parent */
+  left: 0;
+  background-color: whitesmoke;
+  display: none;
+}
+
+.menu_container:hover .menu {
+  display: block;
+}
+
+.menu a {
+  width: 100%;
+  min-width: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* Show the menu icon and hide the navigation menu */
+  .menuIcon {
     display: block;
   }
-  
-  .menu a {
-    width: 100%;
-    min-width: 8rem;
+
+  nav {
+    display: none;
+    flex-direction: column; /* Stack menu items vertically */
   }
-  
-  .cart_count {
-    background-color: #ff4d4d;
-    color: white;
-    padding: 0.1rem 0.45rem;
-    border-radius: 100rem;
-    font-size: 0.9rem;
+
+  nav.show {
+    display: flex;
+    flex-direction: column;
+    display: block;
   }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
