@@ -1,17 +1,21 @@
-.container{
-    background-color: #1b1919;
-    width: 100%;
-    margin-top: 120px;
-    padding-top: 120px;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 120px;
+.container {
+  background-color: #1b1919;
+  width: 100%;
+  margin-top: 120px;
+  padding-top: 120px;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 120px;
 }
 .logo {
-    color: #ffffff;
-    font-weight: bolder;
-    font-size: 18px;
-    font-family: "Poppins", sans-serif;
-
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+/* @media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
   }
-  
+} */

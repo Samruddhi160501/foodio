@@ -12,17 +12,18 @@
 }
 .title {
   font-size: 50px;
-  max-width: 70%;
+  max-width: 60%;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
 .desc {
   font-size: 30px;
-  max-width: 50%;
+  max-width: 60%;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   color: #5c4429;
+  text-align: center;
 }
 .orderButton {
   padding: 3%;

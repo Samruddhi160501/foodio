@@ -28,7 +28,7 @@
   width: 15%;
   margin-left: 2%;
 }
-.button:active {
+.btn:active {
   background-color: #f54748;
   color: white;
 }
